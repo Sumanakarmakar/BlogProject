@@ -31,7 +31,7 @@ const Navbar = () => {
                 user_id: auth?.user?._id,
                 password: data.password
             }
-            const res = await axios.post('https://restapinodejs.onrender.com/api/update-password', upData, {
+            const res = await axios.post('https://studentblogapi.onrender.com/api/update-password', upData, {
                 headers: {
                     'x-access-token': auth?.token
                 }
