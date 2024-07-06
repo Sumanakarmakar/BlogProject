@@ -16,7 +16,7 @@ const Blog = () => {
     const token= auth?.token || JSON.parse(localStorage.getItem('auth')).token
 
     const getAllBlogs = async () => {
-        const response = await axios.get('https://restapinodejs.onrender.com/api/allBlog', {
+        const response = await axios.get('https://studentblogapi.onrender.com/api/allBlog', {
             headers: {
                 'x-access-token': token
             }
