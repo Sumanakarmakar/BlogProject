@@ -25,7 +25,7 @@ const ContactFormPart = () => {
                 phone: data.phone,
                 message: data.message
             }
-            const resp = await axios.post('https://restapinodejs.onrender.com/api/contact/create', upData)
+            const resp = await axios.post('https://studentblogapi.onrender.com/api/contact/create', upData)
             console.log(resp?.data);
             toast.success(resp?.data?.message)
             setIsLoading(false)
@@ -127,18 +127,6 @@ const ContactFormPart = () => {
 
                     }
 
-                    {/* <Grid container>
-                    <Grid item xs>
-                        <Link href="#" variant="body2">
-                            Forgot password?
-                        </Link>
-                    </Grid>
-                    <Grid item>
-                        <Link href="#" variant="body2">
-                            {"Don't have an account? Sign Up"}
-                        </Link>
-                    </Grid>
-                </Grid> */}
                 </Box>
             </div>
 
