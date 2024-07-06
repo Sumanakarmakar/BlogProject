@@ -16,7 +16,7 @@ const Category = () => {
     const token = auth?.token || JSON.parse(localStorage.getItem('auth')).token
 
     const getCategory = async () => {
-        const response = await axios.get('https://restapinodejs.onrender.com/api/showallcategory', {
+        const response = await axios.get('https://studentblogapi.onrender.com/api/showallcategory', {
             headers: {
                 'x-access-token': token
             }

@@ -43,7 +43,7 @@ const Registration = () => {
       regData.append("password", data.password)
       regData.append("photo", document.getElementById('image').files[0])
 
-      const resp = await axios.post('https://restapinodejs.onrender.com/api/register', regData)
+      const resp = await axios.post('https://studentblogapi.onrender.com/api/register', regData)
       console.log(resp?.data);
       toast.success(resp?.data?.message)
       swal({

@@ -17,7 +17,7 @@ const RecentPost = () => {
 
     const getRecentPost = async () => {
         try {
-            const response = await axios.get('https://restapinodejs.onrender.com/api/letest-post', {
+            const response = await axios.get('https://studentblogapi.onrender.com/api/letest-post', {
                 headers: {
                     'x-access-token': token
                 }
@@ -103,8 +103,8 @@ const RecentPost = () => {
 
                                                         component="img"
                                                         height="150px"
-                                                        image={`http://restapinodejs.onrender.com/api/blog/image/${item._id}`}
-                                                        alt="green iguana"
+                                                        image={`https://studentblogapi.onrender.com/api/blog/image/${item._id}`}
+                                                        alt="photo"
                                                     />
                                                     <CardContent>
                                                         <Typography gutterBottom variant="h5" component="div">

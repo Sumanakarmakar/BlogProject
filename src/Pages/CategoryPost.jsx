@@ -18,7 +18,7 @@ const CategoryPost = () => {
 
     const token = auth?.token || JSON.parse(localStorage.getItem('auth')).token
     const getCategoryPost = async () => {
-        const resp = await axios.get(`https://restapinodejs.onrender.com/api/category/post/${id}`, {
+        const resp = await axios.get(`https://studentblogapi.onrender.com/api/category/post/${id}`, {
             headers: {
                 'x-access-token': token
             }
@@ -83,7 +83,7 @@ const CategoryPost = () => {
                                                                 <CardMedia
                                                                     component="img"
                                                                     height="400px"
-                                                                    image={`http://restapinodejs.onrender.com/api/blog/image/${item._id}`}
+                                                                    image={`https://studentblogapi.onrender.com/api/blog/image/${item._id}`}
                                                                     alt="green iguana"
                                                                 />
                                                                 <CardContent>

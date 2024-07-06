@@ -17,7 +17,7 @@ const Courses = () => {
     const [image, setImage] = useState({})
 
     const getCourses = async () => {
-        const response = await axios.get('https://restapinodejs.onrender.com/api/course', {
+        const response = await axios.get('https://studentblogapi.onrender.com/api/course', {
             headers: {
                 'x-access-token': auth?.token
             }
@@ -137,7 +137,7 @@ const Courses = () => {
                                                     <CardMedia
                                                         component="img"
                                                         height="400px"
-                                                        image={`https://restapinodejs.onrender.com/api/course/photo/${item._id}`}
+                                                        image={`https://studentblogapi.onrender.com/api/course/photo/${item._id}`}
                                                         alt="green iguana"
                                                     />
                                                     <CardContent>

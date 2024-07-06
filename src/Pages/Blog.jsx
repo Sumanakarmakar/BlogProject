@@ -32,7 +32,7 @@ const Blog = () => {
     const fetchBlogImage = async (blogData) => {
 
         try {
-            const resp = blogData._id && await axios.get(`https://restapinodejs.onrender.com/api/blog/image/${blogData._id}`, {
+            const resp = blogData._id && await axios.get(`https://studentblogapi.onrender.com/api/blog/image/${blogData._id}`, {
                 headers: {
                     'x-access-token': auth?.token
                 },

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
 
     const getBanner = async () => {
-        const response = await axios.get('https://restapinodejs.onrender.com/api/banner')
+        const response = await axios.get('https://studentblogapi.onrender.com/api/banner')
         return response?.data?.bannerdata
     }
 
@@ -43,7 +43,7 @@ const Home = () => {
                                     return (
 
                                         <div key={index} class={`carousel-item ${index === 0 ? 'active' : ''} `}>
-                                            <img src={`https://restapinodejs.onrender.com/api/banner/photo/${item._id}`} width="100%" class="img-fluid" alt="First slide" />
+                                            <img src={`https://studentblogapi.onrender.com/api/banner/photo/${item._id}`} width="100%" class="img-fluid" alt="First slide" />
                                             <div class="carousel-caption">
                                                 <div class="container carousel-content">
                                                     <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
@@ -58,18 +58,6 @@ const Home = () => {
                                 })
                             }
 
-                            {/* <div class="carousel-item">
-                                <img src="img/carousel-2.jpg" class="img-fluid" alt="Second slide"/>
-                                    <div class="carousel-caption">
-                                        <div class="container carousel-content">
-                                            <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
-                                            <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Digital Services You Really Need!</h1>
-                                            <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
-                                            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-                                            <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
-                                        </div>
-                                    </div>
-                            </div> */}
                         </div>
                         <a href='#carouselId' class="carousel-control-prev" type="button" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
