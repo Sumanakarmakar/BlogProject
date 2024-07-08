@@ -6,7 +6,7 @@ import axios from 'axios'
 const ServicePart = () => {
 
     const getServicesData = async () => {
-        const response = await axios.get('https://studentblogapi.onrender.com/api/service')
+        const response = await axios.get('https://blogapi-xe1w.onrender.com/api/service')
         return response?.data?.data
     }
 

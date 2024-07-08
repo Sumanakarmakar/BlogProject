@@ -38,7 +38,7 @@ const TestimonialPart = () => {
     };
 
     const getTestimonialData = async () => {
-        const response = await axios.get('https://studentblogapi.onrender.com/api/testimonial')
+        const response = await axios.get('https://blogapi-xe1w.onrender.com/api/testimonial')
         return response?.data?.testimonials
     }
 
@@ -70,7 +70,7 @@ const TestimonialPart = () => {
                                                     component="img"
                                                     height="200px"
 
-                                                    image={`https://studentblogapi.onrender.com/api/testimonials/photo/${item._id}`}
+                                                    image={`https://blogapi-xe1w.onrender.com/api/testimonials/photo/${item._id}`}
                                                     alt="green iguana"
                                                     sx={{ margin: "10px 20px", width: "130px" }}
                                                     
