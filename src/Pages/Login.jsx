@@ -40,7 +40,7 @@ const Login = () => {
                 email: data.email,
                 password: data.password
             }
-            const response = await axios.post('https://studentblogapi.onrender.com/api/login', loginData)
+            const response = await axios.post('https://blogapi-xe1w.onrender.com/api/login', loginData)
             setAuth({
                 ...auth,
                 user: response?.data?.user,
