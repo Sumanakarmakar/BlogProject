@@ -33,7 +33,7 @@ const TeamPart = () => {
     };
 
     const getTeamMember = async () => {
-        const response = await axios.get('https://blogapi-xe1w.onrender.com/api/team')
+        const response = await axios.get('https://student-blog.onrender.com/api/team')
         return response?.data?.TeamMember
     }
 
@@ -63,7 +63,7 @@ const TeamPart = () => {
                                         <div class="team-content">
                                             <div class="team-img-icon">
                                                 <div class="team-img rounded-circle">
-                                                    <img src={`https://blogapi-xe1w.onrender.com/api/team/photo/${item._id}`} class="img-fluid w-100 rounded-circle" alt="" />
+                                                    <img src={`https://student-blog.onrender.com/api/team/photo/${item._id}`} class="img-fluid w-100 rounded-circle" alt="" />
                                                 </div>
                                                 <div class="team-name text-center py-3">
                                                     <h4 class="">{item.name}</h4>
