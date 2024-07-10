@@ -16,7 +16,7 @@ const Blog = () => {
     const token= auth?.token || JSON.parse(localStorage.getItem('auth')).token
 
     const getAllBlogs = async () => {
-        const response = await axios.get('https://blogapi-xe1w.onrender.com/api/allBlog', {
+        const response = await axios.get('https://student-blog.onrender.com/api/allBlog', {
             headers: {
                 'x-access-token': token
             }
@@ -32,7 +32,7 @@ const Blog = () => {
     const fetchBlogImage = async (blogData) => {
 
         try {
-            const resp = blogData._id && await axios.get(`https://blogapi-xe1w.onrender.com/api/blog/image/${blogData._id}`, {
+            const resp = blogData._id && await axios.get(`https://student-blog.onrender.com/api/blog/image/${blogData._id}`, {
                 headers: {
                     'x-access-token': auth?.token
                 },

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
 
     const getBanner = async () => {
-        const response = await axios.get('https://blogapi-xe1w.onrender.com/api/banner')
+        const response = await axios.get('https://student-blog.onrender.com/api/banner')
         return response?.data?.bannerdata
     }
 
@@ -43,7 +43,7 @@ const Home = () => {
                                     return (
 
                                         <div key={index} class={`carousel-item ${index === 0 ? 'active' : ''} `}>
-                                            <img src={`https://blogapi-xe1w.onrender.com/api/banner/photo/${item._id}`} width="100%" class="img-fluid" alt="First slide" />
+                                            <img src={`https://student-blog.onrender.com/api/banner/photo/${item._id}`} width="100%" class="img-fluid" alt="First slide" />
                                             <div class="carousel-caption">
                                                 <div class="container carousel-content">
                                                     <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>

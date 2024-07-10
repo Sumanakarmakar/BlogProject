@@ -24,7 +24,7 @@ const BlogDetails = () => {
     const token = auth?.token || JSON.parse(localStorage.getItem('auth')).token
 
     const getBlogDetails = async () => {
-        const response = await axios.get(`https://blogapi-xe1w.onrender.com/api/blogdetails/${id}`, {
+        const response = await axios.get(`https://student-blog.onrender.com/api/blogdetails/${id}`, {
             headers: {
                 'x-access-token': token
             }
@@ -40,7 +40,7 @@ const BlogDetails = () => {
     // Function to fetch the image for the blog
     const fetchImage = async () => {
         const resp = await axios.get(
-            `https://blogapi-xe1w.onrender.com/api/blog/image/${id}`,
+            `https://student-blog.onrender.com/api/blog/image/${id}`,
             {
                 headers: {
                     "x-access-token": token,
@@ -71,7 +71,7 @@ const BlogDetails = () => {
         try {
             const options = {
                 'method': 'PUT',
-                'url': `https://blogapi-xe1w.onrender.com/api/blog/like/${id}`,
+                'url': `https://student-blog.onrender.com/api/blog/like/${id}`,
                 'headers': {
                   'x-access-token': token
                 }
@@ -91,7 +91,7 @@ const BlogDetails = () => {
         try{
             const options={
                 'method': 'PUT',
-                'url': `https://blogapi-xe1w.onrender.com/api/blog/unlike/${id}`,
+                'url': `https://student-blog.onrender.com/api/blog/unlike/${id}`,
                 'headers':{
                     'x-access-token': token
                 }
@@ -120,7 +120,7 @@ const BlogDetails = () => {
                 email: data.email,
                 comment: data.comment
             }
-            const response = await axios.post(`https://blogapi-xe1w.onrender.com/api/blog/${id}/comment/create`, commentData, {
+            const response = await axios.post(`https://student-blog.onrender.com/api/blog/${id}/comment/create`, commentData, {
                 headers: {
                     'x-access-token': token
                 }
@@ -137,7 +137,7 @@ const BlogDetails = () => {
 
     //show all comments
     const getAllComments = async () => {
-        const res = await axios.get(`https://blogapi-xe1w.onrender.com/api/comment/${id}`, {
+        const res = await axios.get(`https://student-blog.onrender.com/api/comment/${id}`, {
             headers: {
                 'x-access-token': token
             }

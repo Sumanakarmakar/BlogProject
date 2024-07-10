@@ -16,7 +16,7 @@ const Category = () => {
     const token = auth?.token || JSON.parse(localStorage.getItem('auth')).token
 
     const getCategory = async () => {
-        const response = await axios.get('https://blogapi-xe1w.onrender.com/api/showallcategory', {
+        const response = await axios.get('https://student-blog.onrender.com/api/showallcategory', {
             headers: {
                 'x-access-token': token
             }
